@@ -27,6 +27,8 @@ if(isset($_POST['upload']) && $_FILES['userfile']['size'] > 0)
         "VALUES ('$fileName', '$fileSize', '$fileType', '$content')";
 
     mysqli_query($connection, $query) or die('Error, query failed');
-    header("Location: /~mkonsa/Eksam/index.php");
 }
+
+header("Location: /~mkonsa/Eksam/index.php");
+
 ?>
